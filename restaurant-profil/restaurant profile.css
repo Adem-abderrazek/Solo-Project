@@ -1,0 +1,43 @@
+body{
+    background-color: #aed7b1;
+}
+img{
+      border-radius: 50%;
+      height: 350PX;
+      width: 280PX;
+      margin: -10px;
+}
+.changeImg{
+  border-radius:50%; 
+  
+}
+  
+  a{
+    color: #28722d;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 1;
+  }
+  
+  .fa-facebook {
+    background: #28722d;
+    color: white;
+  }
+  .fa-google {
+    background: #28722d;
+    color: white;
+  } 
+  .fa-instagram {
+    background: #28722d;
+    color: white;
+  }
+  

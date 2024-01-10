@@ -1,0 +1,15 @@
+img{ 
+    border-radius: 50%;
+    height: 250PX;
+    width: 250PX;
+    margin: -5px;
+    padding: bottom 10px; ;
+   
+}
+body{
+     background-color: #36693a; 
+    background-image:"OLIVIER.jpg", ;
+}
+a{  font-size: "5";
+    color: black;
+}
