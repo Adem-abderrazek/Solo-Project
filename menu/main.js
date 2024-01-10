@@ -1,3 +1,4 @@
+//this is our array of images wich are object
 var data = [
     {name:"Carpacio",
         category: "sea food",
@@ -50,7 +51,7 @@ var data = [
     }
 
 ];
-
+//higher order functions
 var each = function (coll, func) {
     if (Array.isArray(coll)) {
         for (var i = 0; i < coll.length; i++) {
@@ -73,16 +74,21 @@ var filter = function (array, predicate) {
     })
     return acc;
 }
+//this function will filter throw the array loking for a certain category
 var filtercategory=function(search){
     return filter(data,function (element) {
         return element .category===search
     })
 }
+//this function will filter throw the array loking for a certain name of plate
+
 var filtername=function(search){
     return filter(data,function (element) {
         return element .name===search
     })
 }
+//this function will display  the array 
+
 function render(data) {
     each(data, function (element) {
               $('.grid-container').append(`<div class="grid-item">
@@ -94,6 +100,7 @@ function render(data) {
            })
 }
 render (data)
+//this function will display  the array 
 function renderCategory(data) {
     each(data, function (element) {
               $('.grid-container').append(`<div class="grid-item">
@@ -111,7 +118,6 @@ categories=["pasta","sea food","entree","chiken","meat"]
  $("#submitcat").on("click", function () {
     $('.grid-container').empty()
     var search=$(".searchTerm").val()
-    console.log(search)
     if (categories.includes(search) ){
         var filtreddata=filtercategory(search.toLowerCase())
     renderCategory(filtreddata)
